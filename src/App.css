@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.close{
+    display: none;
+}
+.block-con{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+.main{
+    padding: 20px 50px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.main.active{
+    padding: 20px 50px;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.block-con.active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+.ul-li{
+    font-size: 20px;
+    font-weight: 500;
+}
+.brand{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 0, 0);
+    border: 2px solid red;
+    padding: 1px 10px;
+    border-radius: 10px;
+}
+.mode{
+    background-image: url(../public/sun.512x512.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mode.active{
+    background-image: url(../public/bx-moon.svg.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.burger{
+    display: none;
+}
+@media(max-width : 550px){
+    .block-con{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        display: flex;
+        padding: 20px 50px;
+        align-items: center;
+    }
+    .close{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-top: -750px;
+        margin-right: -880px;
+        background-image: url(../public/close.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+    }
+    .block-con.active{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        display: flex;
+        padding: 20px 50px;
+        align-items: center;
+    }
+    .lefts{
+        position: fixed;
+        top: 153px;
+        left: -1000px;
+        width: 100%;
+        height: 250vh;
+        max-width: 1249px;
+        transition: all 0.3s ease-in-out;
+    }
+    .lefts.act{
+        position: fixed;
+        top: 153px;
+        left: 0;
+        width: 100%;
+        max-width: 1249px;
+        height: 250vh;
+    }
+    .ul{
+        display: flex;
+        list-style: none;
+        background-color: rgb(255, 255, 255);
+        padding-top: 100px;
+        color:rgb(0, 0, 0);
+        height: 250vh;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1250px;
+        gap: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+    .ul.active{
+        display: flex;
+        list-style: none;
+        background-color: rgb(0, 0, 0);
+        padding-top: 100px;
+        color:rgb(255, 255, 255);
+        height: 250vh;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1250px;
+        gap: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+    .ul-li{
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .brand{
+        font-size: 75px;
+        font-weight: 500;
+        color: rgb(255, 0, 0);
+        border: 10px solid rgb(255, 0, 0);
+        padding: 1px 10px;
+        border-radius: 20px;
+    }
+    .mode{
+        background-image: url(../public/sun.512x512.png);
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-size: 90px 90px;
+    }
+    .main{
+        display: none;
+    }
+    .mode.active{
+        background-image: url(../public/bx-moon.svg.png);
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-size: 90px 90px;
+    }
+    .burger{
+        display: block;
+        background-image: url(../public/menu.png);
+        background-size: 120px 120px;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 90px;
+        background-position: center;
+    }
+    .wraps{
+        display: flex;
+        gap:20px;
+    }
+    .burger.active{
+        display: block;
+        background-image: url(../public/menu-bar.png);
+        background-size: 120px 120px;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        background-position: center;
+    }
+}
