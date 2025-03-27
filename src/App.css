@@ -80,29 +80,29 @@ body {
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         display: flex;
-        padding: 20px 50px;
+        padding: 10px 20px;
         align-items: center;
     }
     .close{
         display: block;
-        width: 100px;
-        height: 100px;
-        margin-top: -750px;
-        margin-right: -880px;
+        width: 30px;
+        height: 30px;
+        margin-top: -470px;
+        margin-right: -290px;
         background-image: url(../public/close.png);
         background-repeat: no-repeat;
-        background-size: 50px 50px;
+        background-size: 30px 30px;
     }
     .block-con.active{
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
         display: flex;
-        padding: 20px 50px;
+        padding: 10px 20px;
         align-items: center;
     }
     .lefts{
         position: fixed;
-        top: 153px;
+        top: 70px;
         left: -1000px;
         width: 100%;
         height: 250vh;
@@ -111,7 +111,7 @@ body {
     }
     .lefts.act{
         position: fixed;
-        top: 153px;
+        top: 70px;
         left: 0;
         width: 100%;
         max-width: 1249px;
@@ -123,12 +123,12 @@ body {
         background-color: rgb(255, 255, 255);
         padding-top: 100px;
         color:rgb(0, 0, 0);
-        height: 250vh;
+        height: 100vh;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        max-width: 1250px;
-        gap: 100px;
+        max-width: 392px;
+        gap: 50px;
         transition: all 0.2s ease-in-out;
     }
     .ul.active{
@@ -137,50 +137,50 @@ body {
         background-color: rgb(0, 0, 0);
         padding-top: 100px;
         color:rgb(255, 255, 255);
-        height: 250vh;
+        height: 100vh;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        max-width: 1250px;
-        gap: 100px;
+        max-width: 392px;
+        gap: 50px;
         transition: all 0.2s ease-in-out;
     }
     .ul-li{
-        font-size: 60px;
+        font-size: 30px;
         font-weight: 500;
     }
     .brand{
-        font-size: 75px;
+        font-size: 30px;
         font-weight: 500;
         color: rgb(255, 0, 0);
-        border: 10px solid rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
         padding: 1px 10px;
-        border-radius: 20px;
+        border-radius: 8px;
     }
     .mode{
         background-image: url(../public/sun.512x512.png);
-        width: 90px;
-        height: 90px;
+        width: 40px;
+        height: 40px;
         background-repeat: no-repeat;
-        background-size: 90px 90px;
+        background-size: 40px 40px;
     }
     .main{
         display: none;
     }
     .mode.active{
         background-image: url(../public/bx-moon.svg.png);
-        width: 90px;
-        height: 90px;
+        width: 45px;
+        height: 45px;
         background-repeat: no-repeat;
-        background-size: 90px 90px;
+        background-size: 45px 45px;
     }
     .burger{
         display: block;
         background-image: url(../public/menu.png);
-        background-size: 120px 120px;
+        background-size: 50px 50px;
         background-repeat: no-repeat;
-        width: 100px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
         background-position: center;
     }
     .wraps{
@@ -190,11 +190,11 @@ body {
     .burger.active{
         display: block;
         background-image: url(../public/menu-bar.png);
-        background-size: 120px 120px;
+        background-size: 50px 50px;
         background-repeat: no-repeat;
         background-color: #fff;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         background-position: center;
     }
 }
